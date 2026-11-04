@@ -1,0 +1,238 @@
+
+schema = 1
+id = "hshade"
+name = "HShade 1.10"
+version = "1.1.0"
+api = "0.1"
+description = "Atmospheric sky with enhanced gradients, clean water and soft lighting. Vibrant visuals."
+
+[sky]
+file = "sky.wgsl"
+clouds = true
+sun = true
+stars = true
+
+[material]
+file = "material.wgsl"
+
+[[post]]
+file = "post/fog.wgsl"
+
+[[post]]
+file = "post/color.wgsl"
+
+[[options]]
+id = "sky_strength"
+name = "Sky Strength"
+type = "float"
+default = 1.0
+min = 0.0
+max = 2.0
+
+[[options]]
+id = "sky_gradient_strength"
+name = "Gradient Strength"
+type = "float"
+default = 1.0
+min = 0.0
+max = 1.0
+
+[[options]]
+id = "sky_horizon_strength"
+name = "Horizon Strength"
+type = "float"
+default = 1.0
+min = 0.0
+max = 2.0
+
+[[options]]
+id = "sky_horizon_width"
+name = "Horizon Width"
+type = "float"
+default = 0.32
+min = 0.05
+max = 1.0
+
+[[options]]
+id = "sky_horizon_glow"
+name = "Horizon Glow"
+type = "float"
+default = 0.65
+min = 0.0
+max = 2.0
+
+[[options]]
+id = "sky_zenith_strength"
+name = "Zenith Strength"
+type = "float"
+default = 1.0
+min = 0.0
+max = 2.0
+
+[[options]]
+id = "sky_sunset_strength"
+name = "Sunset Strength"
+type = "float"
+default = 1.0
+min = 0.0
+max = 2.0
+
+[[options]]
+id = "sky_night_strength"
+name = "Night Strength"
+type = "float"
+default = 1.0
+min = 0.0
+max = 2.0
+
+[[options]]
+id = "sky_atmosphere_warmth"
+name = "Atmosphere Warmth"
+type = "float"
+default = 1.0
+min = 0.0
+max = 2.0
+
+[[options]]
+id = "sky_rain_darkening"
+name = "Rain Darkening"
+type = "float"
+default = 0.55
+min = 0.0
+max = 1.0
+
+[[options]]
+id = "sky_day_horizon_r"
+name = "Day Horizon Red"
+type = "float"
+default = 0.48
+min = 0.0
+max = 1.0
+
+[[options]]
+id = "sky_day_horizon_g"
+name = "Day Horizon Green"
+type = "float"
+default = 0.78
+min = 0.0
+max = 1.0
+
+[[options]]
+id = "sky_day_horizon_b"
+name = "Day Horizon Blue"
+type = "float"
+default = 1.0
+min = 0.0
+max = 1.0
+
+[[options]]
+id = "sky_day_zenith_r"
+name = "Day Zenith Red"
+type = "float"
+default = 0.035
+min = 0.0
+max = 1.0
+
+[[options]]
+id = "sky_day_zenith_g"
+name = "Day Zenith Green"
+type = "float"
+default = 0.22
+min = 0.0
+max = 1.0
+
+[[options]]
+id = "sky_day_zenith_b"
+name = "Day Zenith Blue"
+type = "float"
+default = 0.58
+min = 0.0
+max = 1.0
+
+[[options]]
+id = "sky_night_horizon_r"
+name = "Night Horizon Red"
+type = "float"
+default = 0.12
+min = 0.0
+max = 1.0
+
+[[options]]
+id = "sky_night_horizon_g"
+name = "Night Horizon Green"
+type = "float"
+default = 0.16
+min = 0.0
+max = 1.0
+
+[[options]]
+id = "sky_night_horizon_b"
+name = "Night Horizon Blue"
+type = "float"
+default = 0.36
+min = 0.0
+max = 1.0
+
+[[options]]
+id = "sky_night_zenith_r"
+name = "Night Zenith Red"
+type = "float"
+default = 0.008
+min = 0.0
+max = 1.0
+
+[[options]]
+id = "sky_night_zenith_g"
+name = "Night Zenith Green"
+type = "float"
+default = 0.015
+min = 0.0
+max = 1.0
+
+[[options]]
+id = "sky_night_zenith_b"
+name = "Night Zenith Blue"
+type = "float"
+default = 0.065
+min = 0.0
+max = 1.0
+
+[[options]]
+id = "water_strength"
+name = "Water Strength"
+type = "float"
+default = 1.0
+min = 0.0
+max = 1.0
+
+[[options]]
+id = "water_opacity"
+name = "Water Opacity"
+type = "float"
+default = 0.82
+min = 0.0
+max = 1.0
+
+[[options]]
+id = "water_gradient"
+name = "Water Gradient"
+type = "float"
+default = 0.65
+min = 0.0
+max = 1.0
+
+[[options]]
+id = "water_brightness"
+name = "Water Brightness"
+type = "float"
+default = 1.08
+min = 0.0
+max = 2.0
+
+[[options]]
+id = "water_saturation"
+name = "Water Saturation"
+type = "float"
+default = 0.90
+min = 0.0
+max = 2.0
