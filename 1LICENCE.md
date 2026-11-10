@@ -1,17 +1,21 @@
-HShade — Apache License 2.0
+ALL RIGHTS RESERVED (ARR)
 
-Copyright 2026 HShade
+Copyright © 2026 HShade. All Rights Reserved.
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this project except in compliance with the License.
+This shader pack and all its associated files, including source code, shaders, configurations, textures, documentation, and other assets, are protected by copyright.
 
-You may obtain a copy of the License at:
+No permission is granted to copy, modify, distribute, redistribute, sublicense, sell, rent, publish, or commercially exploit any part of this project without prior written permission from the copyright holder.
 
-http://www.apache.org/licenses/LICENSE-2.0
+You may download and use this project for personal, non-commercial purposes.
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+You may not:
 
-See the License for the specific language governing permissions and
-limitations under the License.
+- Redistribute or reupload this project or modified versions.
+- Claim this project or any of its components as your own.
+- Use any part of this project in another project without permission.
+- Sell, monetize, or commercially distribute this project or its components.
+- Remove or alter copyright notices and ownership information.
+
+All rights not expressly granted are reserved by the copyright holder.
+
+Unauthorized use, reproduction, or distribution is prohibited.
