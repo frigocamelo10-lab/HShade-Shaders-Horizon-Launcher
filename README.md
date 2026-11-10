@@ -1,5 +1,6 @@
 # HShade-Shaders-Horizon-Launcher
 New vibrant shaders for minecraft RUST client based (Horion Launcher)
+Author:Chainsaww9 -> Offline account in the Horizon Launcher app
 
 # Features
 
@@ -14,6 +15,8 @@ New vibrant shaders for minecraft RUST client based (Horion Launcher)
 --And more.
 
 # Shader pack developed in Horizon Launcher for Android. If you encounter any errors on PC, please let us know.
+
+#Shaderpack version:1.2.0 | 120 | 1.12
 
 For mobile users, it is recommended to use the Vulkan compatible renderer.
 
