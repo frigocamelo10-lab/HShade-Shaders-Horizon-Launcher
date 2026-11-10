@@ -1,10 +1,10 @@
 
 schema = 1
 id = "hshade"
-name = "HShade 1.10"
-version = "1.1.0"
+name = "HShade 1.12"
+version = "1.2.0"
 api = "0.1"
-description = "Atmospheric sky with enhanced gradients, clean water and soft lighting. Vibrant visuals."
+description = "Atmospheric sky with enhanced gradients, clean water, soft lighting and optimized post-processing effects."
 
 [sky]
 file = "sky.wgsl"
@@ -17,9 +17,23 @@ file = "material.wgsl"
 
 [[post]]
 file = "post/fog.wgsl"
+name = "Atmospheric Fog"
 
 [[post]]
 file = "post/color.wgsl"
+name = "Color Grading"
+
+[[post]]
+file = "post/blurmotion.wgsl"
+name = "Motion Blur"
+
+[[post]]
+file = "post/bloom.wgsl"
+name = "Bloom"
+
+[[post]]
+file = "post/nitidez.wgsl"
+name = "Sharpen"
 
 [[options]]
 id = "sky_strength"
@@ -236,3 +250,156 @@ type = "float"
 default = 0.90
 min = 0.0
 max = 2.0
+
+[[options]]
+id = "motion_blur_enabled"
+name = "Motion Blur"
+type = "bool"
+default = true
+
+[[options]]
+id = "motion_tolerance"
+name = "Motion Blur Tolerance"
+type = "float"
+default = 0.5
+min = 0.0
+max = 10.0
+step = 0.1
+
+[[options]]
+id = "motion_intensity"
+name = "Motion Blur Intensity"
+type = "float"
+default = 0.65
+min = 0.0
+max = 1.0
+step = 0.05
+
+[[options]]
+id = "motion_threshold"
+name = "Motion Blur Threshold"
+type = "float"
+default = 24.0
+min = 1.0
+max = 64.0
+step = 1.0
+
+[[options]]
+id = "bloom_enabled"
+name = "Bloom"
+type = "bool"
+default = true
+
+[[options]]
+id = "bloom_intensity"
+name = "Bloom Intensity"
+type = "float"
+default = 0.8
+min = 0.0
+max = 2.0
+step = 0.05
+
+[[options]]
+id = "bloom_threshold"
+name = "Bloom Threshold"
+type = "float"
+default = 0.72
+min = 0.0
+max = 1.0
+step = 0.05
+
+[[options]]
+id = "bloom_samples"
+name = "Bloom Samples"
+type = "int"
+default = 4
+min = 1
+max = 4
+
+[[options]]
+id = "sharpen_enabled"
+name = "Sharpen"
+type = "bool"
+default = true
+
+[[options]]
+id = "sharpen_intensity"
+name = "Sharpen Intensity"
+type = "float"
+default = 0.8
+min = 0.0
+max = 2.0
+step = 0.05
+
+[[options]]
+id = "sharpen_size"
+name = "Sharpen Size"
+type = "float"
+default = 1.0
+min = 0.25
+max = 3.0
+step = 0.25
+
+[[pages]]
+id = "main"
+name = "HShade Settings"
+items = ["page:sky", "page:water", "page:effects"]
+
+[[pages]]
+id = "sky"
+name = "Sky"
+description = "Atmospheric colors, gradients and sky appearance."
+items = [
+    "sky_strength",
+    "sky_gradient_strength",
+    "sky_horizon_strength",
+    "sky_horizon_width",
+    "sky_horizon_glow",
+    "sky_zenith_strength",
+    "sky_sunset_strength",
+    "sky_night_strength",
+    "sky_atmosphere_warmth",
+    "sky_rain_darkening",
+    "sky_day_horizon_r",
+    "sky_day_horizon_g",
+    "sky_day_horizon_b",
+    "sky_day_zenith_r",
+    "sky_day_zenith_g",
+    "sky_day_zenith_b",
+    "sky_night_horizon_r",
+    "sky_night_horizon_g",
+    "sky_night_horizon_b",
+    "sky_night_zenith_r",
+    "sky_night_zenith_g",
+    "sky_night_zenith_b"
+]
+
+[[pages]]
+id = "water"
+name = "Water"
+description = "Water appearance, brightness and color."
+items = [
+    "water_strength",
+    "water_opacity",
+    "water_gradient",
+    "water_brightness",
+    "water_saturation"
+]
+
+[[pages]]
+id = "effects"
+name = "Effects"
+description = "Screen-space visual effects and post-processing."
+items = [
+    "motion_blur_enabled",
+    "motion_tolerance",
+    "motion_intensity",
+    "motion_threshold",
+    "bloom_enabled",
+    "bloom_intensity",
+    "bloom_threshold",
+    "bloom_samples",
+    "sharpen_enabled",
+    "sharpen_intensity",
+    "sharpen_size"
+]
