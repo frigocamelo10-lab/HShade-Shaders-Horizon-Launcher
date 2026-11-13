@@ -24,6 +24,6 @@ For mobile users, it is recommended to use the Vulkan compatible renderer.
 # Message
 This project is just starting and there aren't many innovations yet.
 # New shaderpack logo
-# ARR Licence (All Rights Reserved)
+# ARR Licence (All Rights Reserved) Authorized access for administrators and the creator of Horizon Launcher. 
 
 <img width="256" height="256" alt="HShade Logo" src="https://github.com/user-attachments/assets/0987ab29-ef8f-4fb6-a509-d5b49ee98c17" />
